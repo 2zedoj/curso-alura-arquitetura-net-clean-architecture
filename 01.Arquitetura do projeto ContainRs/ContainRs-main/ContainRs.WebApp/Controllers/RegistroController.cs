@@ -26,7 +26,7 @@ public class RegistroController : Controller
     {
         if (!ModelState.IsValid) return View("Index", form);
 
-        var cliente = new Cliente(form.Nome, form.Email, form.CPF, form.Nascimento)
+        var cliente = new Cliente(form.Nome, form.Email, form.CPF)
         {
             Celular = form.Celular,
             CEP = form.CEP,
@@ -35,8 +35,16 @@ public class RegistroController : Controller
             Complemento = form.Complemento,
             Bairro = form.Bairro,
             Municipio = form.Municipio,
-            Estado = form.Estado
+            Estado = form.Estado,
+            Nascimento = form.Nascimento
         };
+
+        if (cliente.validarNascimento())
+        {
+            ModelState.AddModelError("Nascimento", "Obrigatório ter mais de 18 anos.");
+            return View("Index", form);
+        }
+
         context.Clientes.Add(cliente);
         await context.SaveChangesAsync();
 
