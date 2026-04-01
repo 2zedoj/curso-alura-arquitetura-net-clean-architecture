@@ -129,7 +129,7 @@ Muita calma nessa hora, você provavelmente encontrou uma arquitetura de softwar
 ![enter image description here](https://i.pinimg.com/originals/ea/16/87/ea1687630df89db6030b82e9028b20dd.gif)
 
 A arquitetura espaguete  é um antipadrão de software caracterizado por um código desestruturado, com fluxo de controle confuso, emaranhado e difícil de manter, assemelhando-se a um prato de espaguete.
-Isso dificulta muito ao desenvolvedor realizar novas funcionalidades e manutenções dentro do código, por isso que hoje exigimos um padrão alto nas arquiteturas e existem diferentes tipos, como hexagonal, MVC, DDD, entre outros. Eles nos permite identificar exatamente as responsabilidades e assim temos uma arquitetura translúcida.
+Isso dificulta muito ao desenvolvedor realizar novas funcionalidades e manutenções dentro do código, por isso que hoje exigimos um padrão alto nas arquiteturas e existem diferentes tipos, como hexagonal, MVC, DDD, entre outros. Eles nos permite identificar exatamente as responsabilidades e assim temos uma arquitetura transparente.
 Assim, entendemos o porque é EXTREMAMENTE necessário termos uma boa arquitetura de software.
 E é exatamente esse tipo de problema que uma boa arquitetura evita. Ela não serve apenas para organizar o código, mas para facilitar decisões no dia a dia do desenvolvimento.
 
